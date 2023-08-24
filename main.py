@@ -134,9 +134,9 @@ class Model_neural:
     
     def save_error_record(self, fname=None, ftype='txt'):
         if fname == None:    
-            f = open(f"error/error_record.{ftype}", 'w')
+            f = open(f"error_record.{ftype}", 'w')
         else:
-            f = open(f"error/{fname}.{ftype}", 'w')
+            f = open(f"{fname}.{ftype}", 'w')
         
         if ftype == 'txt':
             f.write(self.comulative_erros)
